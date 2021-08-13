@@ -66,6 +66,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D084E99E26C667DB007EB7D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0304C3226C14A1F006A37BA /* ListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D084E99F26C66805007EB7D6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED599A26B41E36002A631B /* NetwotkWeatherManager.swift */,
+				D0304C3026C140CC006A37BA /* GetCitiesWeather.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		D0ED597326B41218002A631B = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				D0ED599526B41CEB002A631B /* Model */,
-				D0ED599626B41CF3002A631B /* View */,
+				D084E99E26C667DB007EB7D6 /* View */,
+				D0ED599626B41CF3002A631B /* Controller */,
+				D084E99F26C66805007EB7D6 /* Network */,
 				D0ED599726B41D17002A631B /* Supporting files */,
 			);
 			path = Weather;
@@ -98,24 +117,21 @@
 			isa = PBXGroup;
 			children = (
 				D0ED599E26B422B7002A631B /* Weather.swift */,
-				D0ED599A26B41E36002A631B /* NetwotkWeatherManager.swift */,
 				D0ED599C26B42009002A631B /* WeatherData.swift */,
-				D0304C3026C140CC006A37BA /* GetCitiesWeather.swift */,
-				D0304C3226C14A1F006A37BA /* ListTableViewCell.swift */,
-				D0304C3626C263D1006A37BA /* addCity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D0ED599626B41CF3002A631B /* View */ = {
+		D0ED599626B41CF3002A631B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				D0ED599326B41271002A631B /* ListTableViewController.swift */,
 				D0304C3426C15DB5006A37BA /* DetailViewController.swift */,
+				D0304C3626C263D1006A37BA /* addCity.swift */,
 				D0ED598526B41218002A631B /* Main.storyboard */,
 				D0ED598A26B41219002A631B /* LaunchScreen.storyboard */,
 			);
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D0ED599726B41D17002A631B /* Supporting files */ = {

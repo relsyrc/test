@@ -9,9 +9,9 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameCityLabel: UILabel!
-    @IBOutlet weak var tempCityLabel: UILabel!
-    @IBOutlet weak var conditionCitylabel: UILabel!
+    @IBOutlet private weak var nameCityLabel: UILabel!
+    @IBOutlet private weak var tempCityLabel: UILabel!
+    @IBOutlet private weak var conditionCitylabel: UILabel!
     
     
     func configure(weather: Weather) {
