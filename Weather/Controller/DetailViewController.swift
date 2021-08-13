@@ -35,10 +35,10 @@ class DetailViewController: UIViewController {
         
         self.viewCity.addSubview(weatherImage)
         self.conditionLabel.text = weatherModel?.conditionString
-        self.maxTempLabel.text = "\(String(describing: weatherModel?.tempMax))"
-        self.minTempLabel.text = "\(String(describing: weatherModel?.tempMin))"
-        self.windSpeedLabel.text = "\(String(describing: weatherModel?.windSpeed))"
-        self.pressureLabel.text = "\(String(describing: weatherModel?.presureMm))"
-        self.tempLabel.text = weatherModel?.temperatureString
+        self.maxTempLabel.text = "\(String(describing: weatherModel!.tempMax))℃"
+        self.minTempLabel.text = "\(String(describing: weatherModel!.tempMin))℃"
+        self.windSpeedLabel.text = "\(String(describing: weatherModel!.windSpeed))м/с"
+        self.pressureLabel.text = "\(String(describing: weatherModel!.presureMm))мм.рт.ст"
+        self.tempLabel.text = weatherModel!.temperatureString
     }
 }

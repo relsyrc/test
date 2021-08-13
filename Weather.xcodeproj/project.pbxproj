@@ -125,10 +125,10 @@
 		D0ED599626B41CF3002A631B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D0ED598526B41218002A631B /* Main.storyboard */,
 				D0ED599326B41271002A631B /* ListTableViewController.swift */,
 				D0304C3426C15DB5006A37BA /* DetailViewController.swift */,
 				D0304C3626C263D1006A37BA /* addCity.swift */,
-				D0ED598526B41218002A631B /* Main.storyboard */,
 				D0ED598A26B41219002A631B /* LaunchScreen.storyboard */,
 			);
 			path = Controller;
