@@ -31,14 +31,14 @@ class DetailViewController: UIViewController {
         
         let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(weatherModel!.conditionCode).svg")
         
-        let weatherImage = UIView(SVGURL: url!) { (image) in image.resizeToFit(self.viewCity.bounds) }
+        let weatherImage = UIView(SVGURL: url!) { (image) in image.resizeToFit(self.viewCity.frame) }
         
         self.viewCity.addSubview(weatherImage)
-        self.conditionLabel.text = weatherModel?.conditionString
-        self.maxTempLabel.text = "\(String(describing: weatherModel!.tempMax))℃"
-        self.minTempLabel.text = "\(String(describing: weatherModel!.tempMin))℃"
-        self.windSpeedLabel.text = "\(String(describing: weatherModel!.windSpeed))м/с"
-        self.pressureLabel.text = "\(String(describing: weatherModel!.presureMm))мм.рт.ст"
-        self.tempLabel.text = weatherModel!.temperatureString
+//        self.conditionLabel.text = weatherModel?.conditionString
+//        self.maxTempLabel.text = "\(String(describing: weatherModel!.tempMax))℃"
+//        self.minTempLabel.text = "\(String(describing: weatherModel!.tempMin))℃"
+//        self.windSpeedLabel.text = "\(String(describing: weatherModel!.windSpeed))м/с"
+//        self.pressureLabel.text = "\(String(describing: weatherModel!.presureMm))мм.рт.ст"
+//        self.tempLabel.text = weatherModel!.temperatureString
     }
 }
