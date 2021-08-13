@@ -97,9 +97,9 @@
 		D0ED599526B41CEB002A631B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0ED599E26B422B7002A631B /* Weather.swift */,
 				D0ED599A26B41E36002A631B /* NetwotkWeatherManager.swift */,
 				D0ED599C26B42009002A631B /* WeatherData.swift */,
-				D0ED599E26B422B7002A631B /* Weather.swift */,
 				D0304C3026C140CC006A37BA /* GetCitiesWeather.swift */,
 				D0304C3226C14A1F006A37BA /* ListTableViewCell.swift */,
 				D0304C3626C263D1006A37BA /* addCity.swift */,
