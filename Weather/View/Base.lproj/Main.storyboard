@@ -18,43 +18,49 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="lm2-Uw-tDR" customClass="ListTableViewCell" customModule="Weather" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lm2-Uw-tDR" id="fUJ-RA-ZaY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cZ-Mp-bk1">
-                                            <rect key="frame" x="21" y="11" width="77.5" height="21"/>
+                                            <rect key="frame" x="21" y="12" width="77.5" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="jgz-37-uYm">
-                                            <rect key="frame" x="278.5" y="11" width="114.5" height="21"/>
+                                            <rect key="frame" x="287.5" y="12" width="105.5" height="21"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статус" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msn-Fn-ZdI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="55" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeD-El-iyH">
-                                                    <rect key="frame" x="74" y="0.0" width="40.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XGV-9z-BDG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="105.5" height="21"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статус" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msn-Fn-ZdI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="55" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeD-El-iyH">
+                                                            <rect key="frame" x="65" y="0.0" width="40.5" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="jgz-37-uYm" secondAttribute="trailing" constant="1" id="2rA-Cw-kwv"/>
-                                        <constraint firstItem="jgz-37-uYm" firstAttribute="top" secondItem="fUJ-RA-ZaY" secondAttribute="topMargin" id="C05-nX-NaN"/>
-                                        <constraint firstItem="8cZ-Mp-bk1" firstAttribute="top" secondItem="fUJ-RA-ZaY" secondAttribute="topMargin" id="cYt-iy-Yl6"/>
-                                        <constraint firstItem="8cZ-Mp-bk1" firstAttribute="bottom" secondItem="fUJ-RA-ZaY" secondAttribute="bottomMargin" id="chC-jT-M59"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="jgz-37-uYm" secondAttribute="bottom" id="h8S-rl-dnt"/>
-                                        <constraint firstItem="8cZ-Mp-bk1" firstAttribute="leading" secondItem="fUJ-RA-ZaY" secondAttribute="leadingMargin" constant="1" id="nrg-DE-3Nl"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jgz-37-uYm" secondAttribute="trailing" constant="1" id="0xz-fg-fqO"/>
+                                        <constraint firstItem="jgz-37-uYm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8cZ-Mp-bk1" secondAttribute="trailing" priority="750" constant="180" id="IAY-24-Ckh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="jgz-37-uYm" secondAttribute="bottom" constant="1" id="KeU-4u-cXc"/>
+                                        <constraint firstItem="8cZ-Mp-bk1" firstAttribute="leading" secondItem="fUJ-RA-ZaY" secondAttribute="leadingMargin" constant="1" id="PCj-NX-Ndr"/>
+                                        <constraint firstItem="8cZ-Mp-bk1" firstAttribute="top" secondItem="fUJ-RA-ZaY" secondAttribute="topMargin" constant="1" id="SQR-vm-oy6"/>
+                                        <constraint firstItem="jgz-37-uYm" firstAttribute="top" secondItem="fUJ-RA-ZaY" secondAttribute="topMargin" constant="1" id="dYQ-bF-hJY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="8cZ-Mp-bk1" secondAttribute="bottom" constant="1" id="hYp-X5-Khd"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

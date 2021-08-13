@@ -12,7 +12,7 @@ struct Weather {
     var name: String = "Название"
     var temperature: Double = 0.0
     var temperatureString: String {
-        return "\(temperature) C"
+        return "\(temperature)℃"
     }
     var conditionCode: String = ""
     var url: String = ""

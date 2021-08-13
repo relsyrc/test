@@ -22,7 +22,6 @@ func getCityWeather(citiesArray:[String], completionHandler: @escaping (Int, Wea
             }
         }
     }
-    
 }
 
 
