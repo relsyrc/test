@@ -10,20 +10,20 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
 
-    let emptyCity = Weather()
+    private let emptyCity = Weather()
     
-    var citiesArray = [Weather]()
-    var filterCiryArray = [Weather]()
-    var nameCitiesArray = ["Брест","Витебск", "Гродно", "Гомель", "Минск"]
+    private var citiesArray = [Weather]()
+    private var filterCiryArray = [Weather]()
+    private var nameCitiesArray = ["Брест","Витебск", "Гродно", "Гомель", "Минск", "Новосибириск"]
     
-    let searchController = UISearchController(searchResultsController: nil)
+    private let searchController = UISearchController(searchResultsController: nil)
     
-    var searchBarIsEmpty: Bool {
+    private var searchBarIsEmpty: Bool {
         guard let text = searchController.searchBar.text else {return false}
         return text.isEmpty
     }
     
-    var isFiltering: Bool {
+    private var isFiltering: Bool {
         return searchController.isActive && !searchBarIsEmpty
     }
 
@@ -44,7 +44,7 @@ class ListTableViewController: UITableViewController {
         
     }
     
-    @IBAction func pressPlusButton(_ sender: Any) {
+    @IBAction private func pressPlusButton(_ sender: Any) {
         
         alertPlusCity(name: "Город", placeholder: "Введите название города") { city in
             self.nameCitiesArray.append(city)
@@ -54,7 +54,7 @@ class ListTableViewController: UITableViewController {
         
     }
     
-    func addCities() {
+    private func addCities() {
         getCityWeather(citiesArray: nameCitiesArray) { index, weather in
             self.citiesArray[index] = weather
             self.citiesArray[index].name = self.nameCitiesArray[index]
